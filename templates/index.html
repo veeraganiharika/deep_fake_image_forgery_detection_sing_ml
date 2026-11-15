@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Image Forgery Detection{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">
+                Detect Image Forgeries with
+                <span class="gradient-text">AI Precision</span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up">
+                Multi-Module Hybrid Deep Learning System combining MobileNet CNN
+                with advanced machine learning algorithms
+            </p>
+            <div class="hero-buttons animate-slide-up">
+                <a href="{{ url_for('detect') }}" class="btn btn-primary btn-large">
+                    <i class="fas fa-search"></i> Start Detection
+                </a>
+                <a href="{{ url_for('about') }}" class="btn btn-secondary btn-large">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-brain"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Powerful Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Deep Learning</h3>
+                <p>MobileNet CNN architecture for fast and accurate feature extraction</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Hybrid Models</h3>
+                <p>Combines SVM, Logistic Regression, Decision Tree, KNN, and Random Forest</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <h3>Ensemble Learning</h3>
+                <p>Voting classifier for superior accuracy and reliability</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Real-Time Analysis</h3>
+                <p>Get instant forgery detection results within seconds</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>High Accuracy</h3>
+                <p>State-of-the-art performance with multi-model validation</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure Processing</h3>
+                <p>Your images are processed securely and deleted after analysis</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Upload Image</h3>
+                    <p>Select and upload the image you want to analyze</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>AI Analysis</h3>
+                    <p>Our hybrid system analyzes the image using 7 different models</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Get Results</h3>
+                    <p>View detailed predictions and confidence scores from each model</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">7</div>
+                <div class="stat-label">AI Models</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%+</div>
+                <div class="stat-label">Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">&lt;5s</div>
+                <div class="stat-label">Analysis Time</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Secure</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Detect Image Forgeries?</h2>
+            <p>Upload your image and get instant AI-powered analysis</p>
+            <a href="{{ url_for('detect') }}" class="btn btn-primary btn-large">
+                <i class="fas fa-search"></i> Start Now
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

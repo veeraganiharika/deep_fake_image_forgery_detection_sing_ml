@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block title %}About - Image Forgery Detection{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <div class="container">
+        <h1 class="page-title">
+            <i class="fas fa-info-circle"></i>
+            About Our System
+        </h1>
+
+        <!-- Introduction -->
+        <div class="about-intro">
+            <div class="intro-content">
+                <h2>Multi-Module Hybrid Deep Learning System</h2>
+                <p>
+                    Our advanced image forgery detection system combines the power of deep learning
+                    with traditional machine learning algorithms to provide accurate and reliable
+                    detection of manipulated images.
+                </p>
+            </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="tech-section">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>MobileNet CNN</h3>
+                    <p>Lightweight deep learning architecture optimized for mobile and embedded vision applications. Provides fast and efficient feature extraction.</p>
+                    <ul class="tech-features">
+                        <li><i class="fas fa-check"></i> Pre-trained on ImageNet</li>
+                        <li><i class="fas fa-check"></i> Transfer learning applied</li>
+                        <li><i class="fas fa-check"></i> Fast inference time</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Support Vector Machine</h3>
+                    <p>Powerful classification algorithm using RBF kernel for complex decision boundaries in high-dimensional feature space.</p>
+                    <ul class="tech-features">
+                        <li><i class="fas fa-check"></i> RBF kernel</li>
+                        <li><i class="fas fa-check"></i> Probability estimates</li>
+                        <li><i class="fas fa-check"></i> Robust to overfitting</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Logistic Regression</h3>
+                    <p>Linear model for binary classification with probabilistic interpretation of predictions.</p>
+                    <ul class="tech-features">
+                        <li><i class="fas fa-check"></i> Fast training</li>
+                        <li><i class="fas fa-check"></i> Interpretable results</li>
+                        <li><i class="fas fa-check"></i> Probability output</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Decision Tree</h3>
+                    <p>Tree-based model that makes decisions based on feature values through a series of if-then-else rules.</p>
+                    <ul class="tech-features">
+                        <li><i class="fas fa-check"></i> Easy to interpret</li>
+                        <li><i class="fas fa-check"></i> Handles non-linear data</li>
+                        <li><i class="fas fa-check"></i> No feature scaling needed</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>K-Nearest Neighbors</h3>
+                    <p>Instance-based learning algorithm that classifies based on similarity to training samples.</p>
+                    <ul class="tech-features">
+                        <li><i class="fas fa-check"></i> Simple and effective</li>
+                        <li><i class="fas fa-check"></i> No training phase</li>
+                        <li><i class="fas fa-check"></i> Adapts to new data</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Random Forest</h3>
+                    <p>Ensemble method combining multiple decision trees for improved accuracy and reduced overfitting.</p>
+                    <ul class="tech-features">
+                        <li><i class="fas fa-check"></i> 100 decision trees</li>
+                        <li><i class="fas fa-check"></i> Feature importance</li>
+                        <li><i class="fas fa-check"></i> Robust predictions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodology -->
+        <div class="methodology-section">
+            <h2 class="section-title">Our Methodology</h2>
+            <div class="methodology-flow">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <h3>Image Preprocessing</h3>
+                    <p>Error Level Analysis (ELA) is applied to detect compression inconsistencies</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <h3>Feature Extraction</h3>
+                    <p>MobileNet CNN extracts 128-dimensional feature vectors</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <h3>Classification</h3>
+                    <p>Six ML algorithms process features independently</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <h3>Ensemble Voting</h3>
+                    <p>Soft voting combines all predictions for final decision</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="metrics-section">
+            <h2 class="section-title">Performance Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>High Accuracy</h3>
+                    <p>Achieves 95%+ accuracy on test datasets</p>
+                </div>
+                <div class="metric-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Fast Processing</h3>
+                    <p>Results in less than 5 seconds</p>
+                </div>
+                <div class="metric-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Balanced Performance</h3>
+                    <p>Equal detection of authentic and forged images</p>
+                </div>
+                <div class="metric-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Robust Detection</h3>
+                    <p>Handles various forgery techniques</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <div class="team-section">
+            <h2 class="section-title">Research & Development</h2>
+            <p class="team-description">
+                Developed as part of advanced research in computer vision and machine learning,
+                combining state-of-the-art deep learning techniques with traditional ML algorithms
+                to create a robust and reliable image forgery detection system.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}
