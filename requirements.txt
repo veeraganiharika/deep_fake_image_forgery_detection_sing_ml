@@ -1,8 +1,7 @@
 Flask
 numpy
 opencv-python-headless
-Pillow
-torch
-torchvision
+tensorflow
 scikit-learn
+joblib
 gunicorn
